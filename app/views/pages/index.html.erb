@@ -1,3 +1,41 @@
+<style>
+
+  #intro, #carousel {
+    background-attachment:   fixed;
+    width:                   100%;
+    height:                  100vh;
+    position:                relative;
+    box-shadow:              inset 0px 10px 10px rgba(0,0,0,0.3);
+  }
+  #intro  {
+    background:              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                             url("<%= asset_path(randomized_background_image) %>")
+                             no-repeat
+                             top
+                             center;
+    -webkit-background-size: cover;
+    -moz-background-size:    cover;
+    -o-background-size:      cover;
+    background-size:         cover;
+    max-width:               100%;
+  }
+
+  #carousel  {
+    background:              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                             url("#{asset_path(randomized_background_image)}")
+                             no-repeat
+                             top
+                             center;
+    -webkit-background-size: cover;
+    -moz-background-size:    cover;
+    -o-background-size:      cover;
+    background-size:         cover;
+    max-width:               100%;
+  }
+
+
+</style>
+
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header page-scroll">
@@ -22,24 +60,6 @@
         <li>
           <a data-slide="4" style="cursor:pointer;">Contact</a>
         </li>
-        <% #- if !user_signed_in? %>
-        <% #  %li.dropdown %>
-        <% #    %a{:href=>"#", :class=>"dropdown-toggle", "data-toggle"=>"dropdown"}Sign In <b class="caret"></b> %>
-        <% #    %div.dropdown-menu{:style=>"padding:15px;"} %>
-        <% #      %div.signin-form-div %>
-        <% #        = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-        <% #          = devise_error_messages! %>
-        <% #          = f.email_field :email, :autofocus => true, :size => 30, :placeholder => 'Email address' %>
-        <% #          = f.password_field :password, :required => false, :size => 30, :placeholder => 'Password' %>
-        <% #          = f.check_box :remember_me %>
-        <% #          = f.label :remember_me %>
-        <% #          = f.submit "Sign in", :class=>'btn btn-signin' %>
-        <% #        %hr %>
-        <% #        %center %>
-        <% #          = render "devise/shared/links" %>
-        <% #- else %>
-        <% #  %li %>
-        <% #    = link_to "Logout", destroy_user_session_path, method: "delete" %>
       </ul>
     </div>
   </div>
@@ -57,11 +77,11 @@
 <div class="slide" data-slide="1" data-stellar-background-ratio="0.5" id="slide1">
   <!--Section: intro
   -->
-  <div id="preloader">
+  <!-- <div id="preloader">
     <div id="load"></div>
-  </div>
+  </div> -->
   <section class="intro" id="intro">
-    <div class="slogan">
+    <!-- <div class="slogan">
       <h2>
         WELCOME TO
         <span class="text_color">PICKLE JAR</span>
@@ -93,12 +113,12 @@
       <a class="btn btn-circle" data-slide="2">
         <i class="fa fa-angle-double-down animated"></i>
       </a>
-    </div>
+    </div> -->
   </section>
 </div>
 
 
-
+<!--
 <div class="slide" data-slide="2" data-stellar-background-ratio="0.5" id="slide2">
   <section class="home-section text-center" id="contact">
     <div class="container">
@@ -131,8 +151,6 @@
 <div class="slide" data-slide="3" data-stellar-background-ratio="0.5" id="slide3">
   <section id="carousel">
     <div class="carousel slide" id="faq-carousel">
-      <!-- Indicators
-      -->
       <ol class="carousel-indicators">
         <li class="active" data-slide-to="0" data-target="#faq-carousel"></li>
         <li data-slide-to="1" data-target="#faq-carousel"></li>
@@ -145,8 +163,7 @@
         <li data-slide-to="8" data-target="#faq-carousel"></li>
         <li data-slide-to="9" data-target="#faq-carousel"></li>
       </ol>
-      <!-- Wrapper for slides
-      -->
+
       <div class="carousel-inner" role="listbox">
         <div class="item active picklejarGreen">
           <div class="carousel-caption">
@@ -209,10 +226,7 @@
           </div>
         </div>
       </div>
-      <!--.carousel-inner
-      -->
-      <!-- Controls
-      -->
+
       <a class="left carousel-control" data-slide="prev" href="#faq-carousel" role="button">
         <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
         <span class="sr-only">Previous</span>
@@ -222,8 +236,6 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!--.carousel
-    -->
   </section>
 </div>
 
@@ -235,15 +247,13 @@
 
 
 <div class="slide" data-slide="4" data-stellar-background-ratio="0.5" id="slide4">
-  <!--Section: contact
-  -->
+
   <section class="home-section text-center" id="contact">
     <div class="heading-contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
-            <!--.wow.bounceInDown{"data-wow-delay" => "0.4s"}
-            -->
+
             <div class="section-heading">
               <h2>Get in touch</h2>
               <i class="fa fa-2x fa-angle-down"></i>
@@ -359,4 +369,4 @@
       </div>
     </div>
   </section>
-</div>
+</div> -->
