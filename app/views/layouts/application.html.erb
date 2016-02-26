@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Picklejar</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Save recipes from anywhere on the internet to your Pickle Jar." name="description"/>
+    <meta content="Pickle Jar" name="author"/>
+    <meta content="Nrv5N156-6r677PtdgfI7RApXB9OD5n-5DUubHKOVOc" name="google-site-verification"/>
+
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
 
@@ -10,6 +16,8 @@
   </head>
 
   <body>
+    <%= render 'layouts/messages' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
