@@ -3,7 +3,8 @@
 @import "variables";
 @import "typography";
 @import "navbar";
-
+@import "loader";
+@import "contact";
 
 body {
   width: 100%;
@@ -31,165 +32,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
-
-
-
-
-p.form-title  {
-  font-family: ProximaRegular , sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-  color: #FFFFFF;
-  margin-top: 5%;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-form  {
-  width: 350px;
-  margin: 0 auto;
-}
-
-form.login input[type="text"], form.login input[type="password"]  {
-  width: 100%;
-  margin: 0;
-  padding: 5px 10px;
-  background: 0;
-  border: 0;
-  border-bottom: 1px solid #FFFFFF;
-  outline: 0;
-  font-style: italic;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-  color: #FFFFFF;
-  outline: 0;
-}
-
-form.login input[type="submit"] {
-  width: 100%;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-top: 16px;
-  outline: 0;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
-
-form.login input[type="submit"]:hover {
-  transition: background-color 0.5s ease;
-}
-
-form.login .remember-forgot {
-  float: left;
-  width: 100%;
-  margin: 10px 0 0 0;
-}
-
-form.login .forgot-pass-content {
-  min-height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-form.login label, form.login a  {
-  font-size: 16px;
-  font-weight: 400;
-  color: #FFFFFF;
-}
-
-form.login a  {
-  transition: color 0.5s ease;
-}
-
-form.login a:hover  {
-  color: #2ecc71;
-}
-
-.pr-wrap
-{
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: none;
-}
-
-.show-pass-reset
-{
-    display: block !important;
-}
-
-.pass-reset
-{
-    margin: 0 auto;
-    width: 250px;
-    position: relative;
-    margin-top: 22%;
-    z-index: 999;
-    background: #FFFFFF;
-    padding: 20px 15px;
-}
-
-.pass-reset label
-{
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-.pass-reset input[type="email"]
-{
-    width: 100%;
-    margin: 5px 0 0 0;
-    padding: 5px 10px;
-    background: 0;
-    border: 0;
-    border-bottom: 1px solid #000000;
-    outline: 0;
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-    color: #000000;
-    outline: 0;
-}
-
-.pass-reset input[type="submit"]
-{
-    width: 100%;
-    border: 0;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-top: 10px;
-    outline: 0;
-    cursor: pointer;
-    letter-spacing: 1px;
-}
-
-.pass-reset input[type="submit"]:hover
-{
-    transition: background-color 0.5s ease;
-}
-
-
-
-
-
-
-
-
-
-
-
 .intro {
   width:100%;
   position:relative;
@@ -214,8 +56,7 @@ form.login a:hover  {
   .btn-circle {
     position: absolute;
     margin: 0 auto;
-    // text-align: center;
-   bottom: 50px;
+    bottom: 50px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -235,7 +76,6 @@ form.login a:hover  {
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
-    //right: 0;
 }
 
 .btn-circle:hover, .btn-circle:focus {
@@ -244,14 +84,12 @@ form.login a:hover  {
   background: rgba(255,255,255,1);
 }
 
-
 .page-scroll .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 1s;
   -moz-transition-property: -moz-transform;
   -moz-transition-duration: 1s;
 }
-
 
 .page-scroll .btn-circle:hover i.animated {
   -webkit-animation-name: pulse;
@@ -297,86 +135,6 @@ form.login a:hover  {
      transform: scale(1);
   }
 }
-
-
-/*
-    Note: It is best to use a less version of this file ( see http://css2less.cc
-    For the media queries use @screen-sm-min instead of 768px.
-    For .omb_spanOr use @body-bg instead of white.
-*/
-
-// @media (min-width: 768px) {
-//     .omb_row-sm-offset-3 div:first-child[class*="col-"] {
-//         margin-left: 25%;
-//     }
-// }
-//
-// .omb_login .omb_authTitle {
-//     text-align: center;
-// 	line-height: 300%;
-// }
-//
-// .omb_login .omb_socialButtons a {
-// 	color: white; // In yourUse @body-bg
-// 	opacity:0.9;
-// }
-// .omb_login .omb_socialButtons a:hover {
-//     color: white;
-// 	opacity:1;
-// }
-// .omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
-// .omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
-// .omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
-//
-//
-// .omb_login .omb_loginOr {
-// 	position: relative;
-// 	font-size: 1.5em;
-// 	color: #aaa;
-// 	margin-top: 1em;
-// 	margin-bottom: 1em;
-// 	padding-top: 0.5em;
-// 	padding-bottom: 0.5em;
-// }
-// .omb_login .omb_loginOr .omb_hrOr {
-// 	background-color: #cdcdcd;
-// 	height: 1px;
-// 	margin-top: 0px !important;
-// 	margin-bottom: 0px !important;
-// }
-// .omb_login .omb_loginOr .omb_spanOr {
-// 	display: block;
-// 	position: absolute;
-// 	left: 50%;
-// 	top: -0.6em;
-// 	margin-left: -1.5em;
-// 	background-color: white;
-// 	width: 3em;
-// 	text-align: center;
-// }
-//
-// .omb_login .omb_loginForm .input-group.i {
-// 	width: 2em;
-// }
-// .omb_login .omb_loginForm  .help-block {
-//     color: red;
-// }
-//
-//
-// @media (min-width: 768px) {
-//     .omb_login .omb_forgotPwd {
-//         text-align: right;
-// 		margin-top:10px;
-//  	}
-// }
-
-
-
-
-
-
-
-
 
 
  // /* ==== Google font ==== */
@@ -500,70 +258,16 @@ form.login a:hover  {
  //   font-weight: 600;
  // }
  //
- // a {
- //   color: #7AC943;
- //   -webkit-transition: all .2s ease-in-out;
- //   -moz-transition: all .2s ease-in-out;
- //   transition: all .2s ease-in-out;
- // }
- //
- // a:hover,
- // a:focus {
- //   text-decoration: none;
- //   color: #176e61;
- // }
+
  //
  // .light {
  //   font-weight: 400;
  // }
- //
- // /* loader */
- // #preloader {
- //   background: #ffffff;
- //   bottom: 0;
- //   height: 100%;
- //   left: 0;
- //   position: fixed;
- //   right: 0;
- //   top: 0;
- //   width: 100%;
- //   z-index: 999;
- // }
- //
- // @keyframes shadowSpin{
- //   0%{
- //     box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
- //   }
- //   25%{
- //     box-shadow: 10px 10px #39CCCC, -10px -10px #FFDC00;
- //   }
- //   50%{
- //     box-shadow: -10px 10px #39CCCC, 10px -10px #FFDC00;
- //   }
- //   75%{
- //     box-shadow: -10px -10px #39CCCC, 10px 10px #FFDC00;
- //   }
- //   100%{
- //     box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
- //   }
- // }
- //
- // #load {
- //   z-index: 9999;
- //   background-color: #FF4136;
- //   opacity: 0.75;
- //   width: 10px;
- //   height: 10px;
- //   position: absolute;
- //   top: 50%;
- //   margin: -5px auto 0 auto;
- //   left: 0;
- //   right: 0;
- //   border-radius: 0px;
- //   border: 5px solid #FF4136;
- //   box-shadow: 10px 0px #39CCCC, 10px 0px #01FF70;
- //   animation: shadowSpin 1s ease-in-out infinite;
- // }
+
+
+
+
+
  //
  // /* margins */
  // .marginbot-0{margin-bottom:0 !important;}
@@ -585,21 +289,10 @@ form.login a:hover  {
  //   z-index:120;
  // }
  //
- // .home-section {
- //   padding-top: 110px;
- //   padding-bottom: 110px;
- //   display:block;
- //   position:relative;
- //   z-index:120;
- // }
- //
- // .section-heading h2 {
- //   font-size: 40px;
- // }
- //
- // .section-heading i {
- //   margin-bottom: 20px;
- // }
+
+
+
+
  //
  //
  // /* --- section bg var --- */
@@ -623,190 +316,10 @@ form.login a:hover  {
  //   color: #fff;
  // }
  //
- //
- //
- /* ===========================
- --- Intro
- ============================ */
-
-
-
-
- // /* ===========================
- // --- About
- // ============================ */
- //
- // .boxed-grey {
- //     background: #f9f9f9;
- //     padding: 20px;
- // }
- //
- // /*.team h3 {
- // 	margin-bottom: 10px;
- // }
- //
- // .team p.subtitle {
- // 	margin-bottom: 10px;
- // }*/
- //
- // .avatar {
- //   margin-bottom: 20px;
- // }
- //
- // .team-social {
- //   margin-left: 0;
- //   padding-left: 0;
- //
- // }
- //
- // .team-social {
- //   text-align: center;
- // }
- //
- // .team-social li{
- //   display: inline-block;
- //   margin:0 !important;
- //   padding:0;
- // }
- //
- //
- // .team-social a{
- //   margin:0;
- //   padding:0;
- //   display: block;
- //   width: 40px;
- //   height: 40px;
- //   line-height: 40px;
- //   text-align: center;
- //   background: #3bbec0;
- //   color: #fff;
- //   -webkit-transition: background .3s ease-in-out;
- //   transition: background .3s ease-in-out;
- // }
- // .team-social a i{
- //   text-align: center;
- //   margin:0;
- //   padding:0;
- // }
- // .team-social .social-facebook a{background: #3873ae;}
- // .team-social .social-twitter a{background: #62c6f8;}
- // .team-social .social-dribble a{background: #d74980;}
- // .team-social .social-deviantart a{background: #8da356;}
- // .team-social .social-google a{background: #000;}
- // .team-social .social-vimeo a{background: #51a6d3;}
- // .team-social .social-facebook a:hover{background: #4893ce;}
- // .team-social .social-twitter a:hover{background: #82e6ff;}
- // .team-social .social-dribble a:hover{background: #f769a0;}
- // .team-social .social-deviantart a:hover{background: #adc376;}
- // .team-social .social-google a:hover{background: #333;}
- // .team-social .social-vimeo a:hover{background: #71c6f3;}
-
- // /* ===========================
- // --- Contact
- // ============================ */
- //
- // form#contact-form .form-group label {
- //   text-align: left !important;
- //   display: block;
- //   text-transform: uppercase;
- //   letter-spacing: 1px;
- //   font-size: 12px;
- // }
- // form#contact-form input,form#contact-form select,form#contact-form textarea {
- //   border-radius: 0;
- //   border: 1px solid #eee;
- //   -webkit-box-shadow: none;
- //   box-shadow:  none;
- // }
- //
- // form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
- //   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
- //   box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
- // }
- // .input-group-addon {
- //   background-color: #fefefe;
- //   border: 1px solid #eee;
- //   border-radius: 0;
- // }
- //
- // .widget-contact {
- //   text-align: left;
- // }
- //
- //
- // .company-social {
- //   margin-left: 0;
- //   padding-left: 0;
- //   margin-top: 10px;
- // }
- //
- // .company-social {
- //   text-align: left;
- // }
- //
- // .company-social li{
- //   display: inline-block;
- //   margin:0 !important;
- //   padding:0;
- // }
- //
- //
- // .company-social a{
- //   margin:0;
- //   padding:0;
- //   display: block;
- //   width: 40px;
- //   height: 40px;
- //   line-height: 40px;
- //   text-align: center;
- //   background: #3bbec0;
- //   color: #fff;
- //   -webkit-transition: background .3s ease-in-out;
- //   transition: background .3s ease-in-out;
- // }
- // .company-social a i{
- //   text-align: center;
- //   margin:0;
- //   padding:0;
- // }
- // .company-social .social-facebook a{background: #3873ae;}
- // .company-social .social-twitter a{background: #62c6f8;}
- // .company-social .social-dribble a{background: #d74980;}
- // .company-social .social-deviantart a{background: #8da356;}
- // .company-social .social-google a{background: #000;}
- // .company-social .social-vimeo a{background: #51a6d3;}
- // .company-social .social-facebook a:hover{background: #4893ce;}
- // .company-social .social-twitter a:hover{background: #82e6ff;}
- // .company-social .social-dribble a:hover{background: #f769a0;}
- // .company-social .social-deviantart a:hover{background: #adc376;}
- // .company-social .social-google a:hover{background: #333;}
- // .company-social .social-vimeo a:hover{background: #71c6f3;}
- //
  // /* ===========================
  // --- Elements
  // ============================ */
  //
- // .btn {
- //   border-radius: 0;
- //   text-transform: uppercase;
- //   font-family: Montserrat,sans-serif;
- //   font-weight: 400;
- //   -webkit-transition: all .3s ease-in-out;
- //   -moz-transition: all .3s ease-in-out;
- //   transition: all .3s ease-in-out;
- //   //position: absolute;
- //   //bottom: 5px;
- // }
-
-
-
-
-
-
-
-
-
-
  // #text {
  //   color: #fff;
  //   background: #ffcc00;
@@ -815,17 +328,6 @@ form.login a:hover  {
  // #map {
  //   height: 500px;
  // }
- //
- //
- // .btn-skin:hover,
- // .btn-skin:focus,
- // .btn-skin:active,
- // .btn-skin.active {
- //   color: #fff;
- //   background-color: #666;
- //   border-color: #666;
- // }
- //
  //
  // .btn-default:hover,
  // .btn-default:focus {
