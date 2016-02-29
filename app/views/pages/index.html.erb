@@ -39,11 +39,9 @@
 <%= render 'navbar' %>
 
 <div class="slide" data-slide="1" data-stellar-background-ratio="0.5" id="slide1">
-  <!--Section: intro
-  -->
-  <!-- <div id="preloader">
+  <div id="preloader">
     <div id="load"></div>
-  </div> -->
+  </div>
   <section class="intro" id="intro">
     <div class="container">
       <div class="brand-heading element">Pickle Jar</div>
@@ -54,41 +52,6 @@
         </a>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="slogan">
-
-      <h4>Join the waiting list for the beta. We keep you posted.</h4>
-      <div class="center-form-div">
-        <form accept-charset="UTF-8" action="/waitinglist" data-remote="true" id="waiting_list_form" method="post">
-          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token() %>"></input>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <input class="form-control" id="email" name="waiting_list_user_form[email]" placeholder="Your email here..." required="required" type="text">/</input>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <button class="btn btn-signup" type="submit">
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <h4 id="waiting_list_success">Thank you for your interest! We will keep you notified on progress!</h4>
-      <h4 id="waiting_list_error">That email is already signed up. Please check your email address and try again.</h4>
-    </div>
-     -->
-
   </section>
 </div>
 
@@ -215,68 +178,50 @@
 </div>
 
 
+-->
 
 
 
 
 
-
-<div class="slide" data-slide="4" data-stellar-background-ratio="0.5" id="slide4">
-
-  <section class="home-section text-center" id="contact">
-    <div class="heading-contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-
-            <div class="section-heading">
-              <h2>Get in touch</h2>
-              <i class="fa fa-2x fa-angle-down"></i>
-            </div>
+<div class="slide" data-slide="3" data-stellar-background-ratio="0.5" id="slide3">
+  <section class="contact text-center" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="section-heading">
+            <h2>Get in touch</h2>
+            <i class="fa fa-2x fa-angle-down"></i>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
       <div class="row">
         <div class="col-lg-2 col-lg-offset-5">
-          <hr class="marginbot-50"/>
+          <hr/>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-8">
           <div class="boxed-grey">
-
-
-
-
-
-
             <form accept-charset="UTF-8" action="/contact_forms" id="contact-form" method="post">
               <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token() %>"></input>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="name">
-                      Name
-                    </label>
-                    <input class="form-control" id="name" name="contact_form[name]" placeholder="Enter name" required="required" type="text">/</input>
+                    <label for="name">Name</label>
+                    <input class="form-control" id="name" name="contact_form[name]" placeholder="Enter name" required="required" type="text"></input>
                   </div>
                   <div class="form-group">
-                    <label for="email">
-                      Email Address
-                    </label>
+                    <label for="email">Email Address</label>
                     <div class="input-group">
                       <span class="input-group-addon">
                         <span class="glyphicon glyphicon-envelope"></span>
                       </span>
-                      <input class="form-control" id="email" name="contact_form[email]" placeholder="Enter email" required="required" type="email">/</input>
+                      <input class="form-control" id="email" name="contact_form[email]" placeholder="Enter email" required="required" type="email"></input>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="subject">
-                      Subject
-                    </label>
+                    <label for="subject">Subject</label>
                     <select class="form-control" id="subject" name="contact_form[subject]" required="required">
                       <option selected="selected" value="na">Choose One:</option>
                       <option value="General Customer Service">General Customer Service</option>
@@ -287,28 +232,15 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="name">
-                      Message
-                    </label>
+                    <label for="name">Message</label>
                     <textarea class="form-control" cols="25" id="message" name="contact_form[message]" placeholder="Message" required="required" rows="9"></textarea>
                   </div>
                 </div>
                 <div class="col-md-12">
-                  <button class="btn btn-skin pull-right" id="btnContactUs" type="submit">
-                    Send Message
-                  </button>
+                  <button class="btn btn-contact-form pull-right" id="btnContactUs" type="submit">Send Message</button>
                 </div>
               </div>
             </form>
-
-
-
-
-
-
-
-
-
           </div>
         </div>
         <div class="col-lg-4">
@@ -344,4 +276,4 @@
       </div>
     </div>
   </section>
-</div> -->
+</div>
