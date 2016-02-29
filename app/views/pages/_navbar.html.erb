@@ -17,11 +17,63 @@
           <a data-slide="2" style="cursor:pointer;">About</a>
         </li>
         <li>
-          <a data-slide="3" style="cursor:pointer;">FAQs</a>
+          <a data-slide="3" style="cursor:pointer;">Contact</a>
         </li>
-        <li>
-          <a data-slide="4" style="cursor:pointer;">Contact</a>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+          <ul class="dropdown-menu login">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                    <div class="form-group">
+                      <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email address"%>
+                    </div>
+                    <div class="form-group">
+                      <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password" %>
+                    </div>
+                    <div class="help-block text-right">
+                      <%= link_to "Forgot your password?", new_password_path(:user)%>
+                    </div>
+                    <div class="actions">
+                      <%= f.submit "Log in", class: "btn btn-signin" %>
+                    </div>
+
+                    <% if devise_mapping.rememberable? -%>
+                      <div class="help-block text-left">
+                        <%= f.check_box :remember_me %>
+                        <%= f.label :remember_me, 'REMEMBER ME' %>
+                      </div>
+                    <% end -%>
+                  <% end %>
+                </div>
+                <div class="bottom text-center">
+                  New here ? <%= link_to "Join Us", new_user_registration_path %>
+                </div>
+              </div>
+            </li>
+          </ul>
         </li>
+        <!-- <% if !user_signed_in? -->
+        <!-- -#- if !user_signed_in?
+-#  %li.dropdown
+-#    %a{:href=>"#", :class=>"dropdown-toggle", "data-toggle"=>"dropdown"}Sign In <b class="caret"></b>
+-#    %div.dropdown-menu{:style=>"padding:15px;"}
+-#      %div.signin-form-div
+-#        = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+-#          = devise_error_messages!
+-#          = f.email_field :email, :autofocus => true, :size => 30, :placeholder => 'Email address'
+-#          = f.password_field :password, :required => false, :size => 30, :placeholder => 'Password'
+-#          = f.check_box :remember_me
+-#          = f.label :remember_me
+-#          = f.submit "Sign in", :class=>'btn btn-signin'
+-#        %hr
+-#        %center
+-#          = render "devise/shared/links"
+-#- else
+-#  %li
+-#    = link_to "Logout", destroy_user_session_path, method: "delete" -->
       </ul>
     </div>
   </div>
