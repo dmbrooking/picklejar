@@ -2,7 +2,7 @@
   color: #7AC943;
   font-size: 48px;
   line-height: 50px;
-  font-family: HoneyScript-Light, sans-serif;
+  font-family: HoneyScript-SemiBold, sans-serif;
   text-transform: none;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -11,7 +11,7 @@
   background-color: rgba(255,255,255,.7);
 }
 
-.navbar-custom ul.nav li a {
+.navbar-custom ul.nav li a, .field {
   font-size: 12px;
   letter-spacing: 1px;
   color: #444;
@@ -19,11 +19,18 @@
   font-weight: 700;
 }
 
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
+.navbar-custom .nav li>a:hover,
+.navbar-custom .nav li>a:focus,
 .navbar-custom .nav li.active {
   outline: 0;
   background-color: $pickleJarGreen;
+}
+
+.navbar-custom .nav li ul li a:hover,
+.navbar-custom .nav li ul li a:focus  {
+  outline: 0;
+  color: $pickleJarGreen;
+  text-decoration: none;
 }
 
 .navbar {
@@ -34,4 +41,33 @@
   -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
   transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.btn-signin {
+  width: 100%;
+  background: $pickleJarGreen;
+  border-color: $pickleJarGreen-dark;
+  color: $white;
+}
+
+.dropdown-menu  {
+  border: 1px solid $mercury;
+}
+
+.login  {
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+
+  .help-block{
+    font-size:12px
+  }
+
+  .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+  }
 }

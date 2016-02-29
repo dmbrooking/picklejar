@@ -1,13 +1,14 @@
- @import "bootstrap-sprockets";
- @import "bootstrap";
- @import "variables";
- @import "typography";
- @import "navbar";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "variables";
+@import "typography";
+@import "navbar";
+
 
 body {
   width: 100%;
   height: 100%;
-  font-family: 'ProximaRegular',sans-serif;
+  font-family: ProximaRegular,sans-serif;
   font-weight: 300;
   color: #666;
   background-color: #fff;
@@ -34,6 +35,340 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+p.form-title  {
+  font-family: ProximaRegular , sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 5%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+form  {
+  width: 350px;
+  margin: 0 auto;
+}
+
+form.login input[type="text"], form.login input[type="password"]  {
+  width: 100%;
+  margin: 0;
+  padding: 5px 10px;
+  background: 0;
+  border: 0;
+  border-bottom: 1px solid #FFFFFF;
+  outline: 0;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  outline: 0;
+}
+
+form.login input[type="submit"] {
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 16px;
+  outline: 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+form.login input[type="submit"]:hover {
+  transition: background-color 0.5s ease;
+}
+
+form.login .remember-forgot {
+  float: left;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+
+form.login .forgot-pass-content {
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form.login label, form.login a  {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+form.login a  {
+  transition: color 0.5s ease;
+}
+
+form.login a:hover  {
+  color: #2ecc71;
+}
+
+.pr-wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+.show-pass-reset
+{
+    display: block !important;
+}
+
+.pass-reset
+{
+    margin: 0 auto;
+    width: 250px;
+    position: relative;
+    margin-top: 22%;
+    z-index: 999;
+    background: #FFFFFF;
+    padding: 20px 15px;
+}
+
+.pass-reset label
+{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.pass-reset input[type="email"]
+{
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #000000;
+    outline: 0;
+}
+
+.pass-reset input[type="submit"]
+{
+    width: 100%;
+    border: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.pass-reset input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+.intro {
+  width:100%;
+  position:relative;
+  color: white;
+  text-align: center;
+  padding:15% 0 0 0;
+
+  .brand-heading {
+    font-size: 100px;
+    font-family: HoneyScript-SemiBold,sans-serif;
+    color: #7AC943;
+    text-transform: none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .slogan {
+   font-size: 40px;
+   font-family: JimmySans,sans-serif;
+   font-weight: bold;
+  }
+
+  .btn-circle {
+    position: absolute;
+    margin: 0 auto;
+    // text-align: center;
+   bottom: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+  }
+}
+
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #fff;
+  background: 0 0;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+    //right: 0;
+}
+
+.btn-circle:hover, .btn-circle:focus {
+  outline: 0;
+  color: #000;
+  background: rgba(255,255,255,1);
+}
+
+
+.page-scroll .btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+
+
+.page-scroll .btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+     -moz-transform: scale(1);
+     transform: scale(1);
+  }
+}
+
+
+/*
+    Note: It is best to use a less version of this file ( see http://css2less.cc
+    For the media queries use @screen-sm-min instead of 768px.
+    For .omb_spanOr use @body-bg instead of white.
+*/
+
+// @media (min-width: 768px) {
+//     .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+//         margin-left: 25%;
+//     }
+// }
+//
+// .omb_login .omb_authTitle {
+//     text-align: center;
+// 	line-height: 300%;
+// }
+//
+// .omb_login .omb_socialButtons a {
+// 	color: white; // In yourUse @body-bg
+// 	opacity:0.9;
+// }
+// .omb_login .omb_socialButtons a:hover {
+//     color: white;
+// 	opacity:1;
+// }
+// .omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+// .omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+// .omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+//
+//
+// .omb_login .omb_loginOr {
+// 	position: relative;
+// 	font-size: 1.5em;
+// 	color: #aaa;
+// 	margin-top: 1em;
+// 	margin-bottom: 1em;
+// 	padding-top: 0.5em;
+// 	padding-bottom: 0.5em;
+// }
+// .omb_login .omb_loginOr .omb_hrOr {
+// 	background-color: #cdcdcd;
+// 	height: 1px;
+// 	margin-top: 0px !important;
+// 	margin-bottom: 0px !important;
+// }
+// .omb_login .omb_loginOr .omb_spanOr {
+// 	display: block;
+// 	position: absolute;
+// 	left: 50%;
+// 	top: -0.6em;
+// 	margin-left: -1.5em;
+// 	background-color: white;
+// 	width: 3em;
+// 	text-align: center;
+// }
+//
+// .omb_login .omb_loginForm .input-group.i {
+// 	width: 2em;
+// }
+// .omb_login .omb_loginForm  .help-block {
+//     color: red;
+// }
+//
+//
+// @media (min-width: 768px) {
+//     .omb_login .omb_forgotPwd {
+//         text-align: right;
+// 		margin-top:10px;
+//  	}
+// }
 
 
 
@@ -54,25 +389,9 @@ h1, h2, h3, h4, h5, h6 {
  //     font-url($icon-font-path + 'glyphicons-halflings-regular.ttf') format('truetype'),
  //     font-url($icon-font-path + 'glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
  // }
- //
- //
- //
- // .dropdown-menu  {
- //   border: 1px solid $mercury;
- // }
- //
- // .btn-signin {
- //   width: 100%;
- //   background: $pickleJarGreen;
- //   border-color: $pickleJarGreen-dark;
- //   color: $white;
- // }
- //
- // .btn-signup {
- //     background: $pickleJarGreen;
- //     border-color: $pickleJarGreen-dark;
- //     color: $white;
- // }
+
+
+
  //
  // .shared_links {
  //   font-size: 12px;
@@ -149,15 +468,15 @@ h1, h2, h3, h4, h5, h6 {
  //
  //
  //
- // footer {
- //   text-align: center;
- //   padding: 50px 0 ;
- //   background-color: $pickleJarGreen;
- // }
- //
- // footer p {
- //   color: $white-light;
- // }
+ footer {
+   text-align: center;
+   padding: 50px 0 ;
+   background-color: $pickleJarGreen;
+ }
+
+ footer p {
+   color: $white-light;
+ }
  //
  //
  //
@@ -306,56 +625,11 @@ h1, h2, h3, h4, h5, h6 {
  //
  //
  //
- // /* ===========================
- // --- Intro
- // ============================ */
- //
- // .intro {
- //   width:100%;
- //   position:relative;
- // }
- //
- // #intro.intro {
- //   padding:10% 0 0 0;
- // }
- //
- // .intro .slogan {
- //   text-align: center;
- //
- // }
- //
- // .intro .page-scroll {
- //   text-align: center;
- // }
- //
- // .brand-heading {
- //   font-size: 40px;
- // }
- //
- // .intro-text {
- //   font-size: 18px;
- // }
- //
- // .intro .slogan h2 {
- //   color: #FFF;
- //   text-shadow: none;
- //   font-size: 60px;
- //   line-height: 60px;
- //   font-weight: 700;
- //   font-family: Montserrat, sans-serif;
- //   background-color: rgba(0, 0, 0, 0);
- //   text-decoration: none;
- //   text-transform: uppercase;
- //   border-width: 0px;
- //   border-color: #000;
- //   border-style: none;
- //   text-shadow: -1px 0 1px #000;
- // }
- //
- // .intro .slogan h4 {
- //   color: #fff;
- //   text-shadow: -1px 1px 1px #000;
- // }
+ /* ===========================
+ --- Intro
+ ============================ */
+
+
 
 
  // /* ===========================
@@ -520,100 +794,17 @@ h1, h2, h3, h4, h5, h6 {
  //   -webkit-transition: all .3s ease-in-out;
  //   -moz-transition: all .3s ease-in-out;
  //   transition: all .3s ease-in-out;
+ //   //position: absolute;
+ //   //bottom: 5px;
  // }
- //
- //
- // .btn-circle {
- //   width: 70px;
- //   height: 70px;
- //   margin-top: 15px;
- //   padding: 7px 16px;
- //   border: 2px solid #fff;
- //   border-radius: 50%;
- //   font-size: 40px;
- //   color: #fff;
- //   background: 0 0;
- //   -webkit-transition: background .3s ease-in-out;
- //   -moz-transition: background .3s ease-in-out;
- //   transition: background .3s ease-in-out;
- // }
- //
- // .btn-circle.btn-dark {
- //   border: 2px solid #666;
- //   color: #666;
- // }
- //
- //
- // .btn-circle:hover,
- // .btn-circle:focus {
- //   outline: 0;
- //   color: #000;
- //   background: rgba(255,255,255,1);
- // }
- //
- // .btn-circle.btn-dark :hover,
- // .btn-circle.btn-dark :focus {
- //   outline: 0;
- //   color: #999;
- //   background: #fff;
- // }
- //
- // .btn-circle.btn-dark :hover i,
- // .btn-circle.btn-dark :focus i{
- //   color: #999;
- // }
- //
- // .page-scroll .btn-circle i.animated {
- //   -webkit-transition-property: -webkit-transform;
- //   -webkit-transition-duration: 1s;
- //   -moz-transition-property: -moz-transform;
- //   -moz-transition-duration: 1s;
- // }
- //
- // .page-scroll .btn-circle:hover i.animated {
- //   -webkit-animation-name: pulse;
- //   -moz-animation-name: pulse;
- //   -webkit-animation-duration: 1.5s;
- //   -moz-animation-duration: 1.5s;
- //   -webkit-animation-iteration-count: infinite;
- //   -moz-animation-iteration-count: infinite;
- //   -webkit-animation-timing-function: linear;
- //   -moz-animation-timing-function: linear;
- // }
- //
- // @-webkit-keyframes pulse {
- // 0% {
- //   -webkit-transform: scale(1);
- //   transform: scale(1);
- // }
- //
- // 50% {
- //   -webkit-transform: scale(1.2);
- // transform: scale(1.2);
- // }
- //
- // 100% {
- //    -webkit-transform: scale(1);
- // transform: scale(1);
- // }
- // }
- //
- // @-moz-keyframes pulse {
- // 0% {
- //   -moz-transform: scale(1);
- //   transform: scale(1);
- // }
- //
- // 50% {
- //   -moz-transform: scale(1.2);
- // transform: scale(1.2);
- // }
- //
- // 100% {
- //    -moz-transform: scale(1);
- // transform: scale(1);
- // }
- // }
+
+
+
+
+
+
+
+
 
 
  // #text {
@@ -658,16 +849,11 @@ h1, h2, h3, h4, h5, h6 {
  // @media(min-width:767px) {
 
 
-
+   //
   //  .intro {
   //    height: 100%;
   //    padding: 0;
   //  }
-   //
-  //  .brand-heading {
-  //    font-size: 100px;
-  //  }
-   //
    //
   //  .intro-text {
   //    font-size: 25px;
