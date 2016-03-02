@@ -66,6 +66,17 @@ Rails.application.configure do
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "picklejar_#{Rails.env}"
+
+  config.action_mailer.smtp_settings = {
+    :user_name => ENV['SENDGRID_USER'],
+    :password => ENV['SENDGRID_PASSWORD'],
+    :domain => 'getpicklejar.com',
+    :address => 'smtp.sendgrid.net',
+    :port => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+  
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
