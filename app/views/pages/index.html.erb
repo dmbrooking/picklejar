@@ -1,6 +1,6 @@
 <style>
 
-  #intro, #carousel {
+  #intro, #about {
     background-attachment:   fixed;
     width:                   100%;
     height:                  100vh;
@@ -20,9 +20,9 @@
     max-width:               100%;
   }
 
-  #carousel  {
+  #about  {
     background:              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                             url("#{asset_path(randomized_background_image)}")
+                             url("<%= asset_path('backgrounds/about_background.jpg') %>")
                              no-repeat
                              top
                              center;
@@ -58,29 +58,69 @@
 
 
 <div class="slide" data-slide="2" data-stellar-background-ratio="0.5" id="slide2">
-  <!-- <section class="home-section text-center" id="contact">
+  <section class="about" id="about">
     <div class="container">
-      <div class="row marketing">
-        <div class="col-lg-4">
-          <%= image_tag "website_logos.png", :class => "img-responsive" %>
-          <br/>
-          <h3>Find a recipe.</h3>
-          <p>Pickle Jar is compatible with any website that has a recipe including some of the largest recipe sites today such as allrecipes.com, epicurious.com, and foodnetwork.com.</p>
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="row">
+            <div class="slogan">Save it now.</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 col-lg-offset-5">
+              <hr/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="sub-slogan">Save recipes from any site on the internet using your browser or directly from your phone.</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <i class="fa fa-4x fa-laptop" id="bookmarklet_tip"></i>
+            </div>
+            <div class="col-lg-4">
+              <i class="fa fa-4x fa-desktop" id="extension_tip"></i>
+            </div>
+            <div class="col-lg-4">
+              <i class="fa fa-5x fa-mobile" id="save_mobile_tip"></i>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <h3>Save the recipe with just one click.</h3>
-          <p>Using a Pickle Jar browser extension or a personalized bookmarklet generated just for you, with on click you are able to save the recipe to Pickle Jar.</p>
-          <%= image_tag "add_to_picklejar.png", :class => "img-responsive" %>
-        </div>
-        <div class="col-lg-4">
-          <%= image_tag "devices.png", :class => "img-responsive" %>
-          <br/>
-          <h3>View and cook - anytime, anywhere.</h3>
-          <p>From getpicklejar.com or the mobile Pickle Jar app, you will be able to view any of your saved recipes whenever you want, wherever you are. You can search by name, ingredients, website, and many other options.</p>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5">
+          <div class="row">
+            <div class="slogan">Cook it later.</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 col-lg-offset-5">
+              <hr/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="sub-slogan">Retrieve your saved recipes any time you want to cook them later.</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <i class="fa fa-4x fa-apple" id="view_apple_tip"></i>
+            </div>
+            <div class="col-lg-4">
+              <i class="fa fa-4x fa-android" id="view_android_tip"></i>
+            </div>
+            <div class="col-lg-4">
+              <i class="fa fa-4x fa-desktop" id="view_computer_tip"></i>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="row">
+        <div class="tool-tip" id="bookmarklet">Use a unique to you bookmarklet to save recipes from any website directly in your browser.</div>
+        <div class="tool-tip" id="extension">Download a browser extension for your browser of choice and save by clicking on that (Chrome and Safari currently supported, others coming soon!)</div>
+        <div class="tool-tip" id="save_mobile">Once you have download the mobile app, you will be able to send recipes to PickleJar using your phones quick actions capabilities.</div>
+        <div class="tool-tip" id="view_apple">View your saved recipes from you iPhone or iPad while in the kitchen or wherever you are.</div>
+        <div class="tool-tip" id="view_android">COMING SOON!!! View your saved recipes from you Android device while in the kitchen or wherever you are.</div>
+        <div class="tool-tip" id="view_computer">All your saved recipes will always be available and viewable from getpicklejar.com</div>
+      </div>
     </div>
-  </section> -->
+  </section>
 </div>
 
 
@@ -179,7 +219,6 @@
 
 
 -->
- -->
 
 
 

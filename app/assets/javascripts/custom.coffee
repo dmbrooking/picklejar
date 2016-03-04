@@ -15,6 +15,14 @@
 
 
 $(document).ready ($) ->
+
+  $('.about').find('#bookmarklet').hide();
+  $('.about').find('#extension').hide();
+  $('.about').find('#save_mobile').hide();
+  $('.about').find('#view_apple').hide();
+  $('.about').find('#view_android').hide();
+  $('.about').find('#view_computer').hide();
+
   goToByScroll = (dataslide) ->
     htmlbody.animate { scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top }, 1500, 'easeInOutQuint'
     i = 0
@@ -48,6 +56,7 @@ $(document).ready ($) ->
   htmlbody = $('html,body')
   brand = $('.navbar-brand')
   arrows = $('a.btn.btn-circle')
+  about_icons = $('.about').find('i')
 
   htmlbody.animate { scrollTop: $('.slide[data-slide="1"]').offset().top }, 1500, 'easeInOutQuint'
   $(document).on 'scroll', onScroll
@@ -59,7 +68,20 @@ $(document).ready ($) ->
     goToByScroll dataslide
     return
 
+  showToolTip = (e) ->
+    new_id = this.id.substring(0, this.id.length - 4)
+    if (this.style.color == 'rgb(122, 201, 67)')
+      this.style.color = 'white'
+      $('.about').find('#' + new_id).hide();
+    else
+      this.style.color = '#7AC943'
+      $('.about').find('#' + new_id).show();
+    return
+
   brand.click scrollOnClick
   links.click scrollOnClick
   arrows.click scrollOnClick
+
+  about_icons.hover showToolTip
+
   return
