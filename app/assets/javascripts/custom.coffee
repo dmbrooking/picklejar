@@ -62,10 +62,10 @@ $(document).ready ($) ->
   $(document).on 'scroll', onScroll
 
   scrollOnClick = (e) ->
-    $('body').removeClass 'stop-scrolling'
     e.preventDefault()
     dataslide = $(this).attr('data-slide')
-    goToByScroll dataslide
+    if (dataslide)
+      goToByScroll dataslide
     return
 
   showToolTip = (e) ->
