@@ -6,6 +6,7 @@
 @import "loader";
 @import "contact";
 @import "footer";
+@import "recipe-tableview";
 
 body {
   width: 100%;
@@ -39,59 +40,52 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
-// blockquote {
-
-//   border-left: 0px;
-//   color: #a5a4a4;
-//   font-style: italic;
-
-//   text-align: center;
-// }
-
 blockquote {
-    // border-top: 1px solid #ccc;
-    // border-bottom: 1px solid #ccc;
-    border-left: 0px;
-// font-family: Georgia, serif;
-font-family: ProximaRegular,sans-serif;
-font-size: 30px;
-font-style: italic;
-text-align: center;
-
+  border-left: 0px;
+  font-family: ProximaRegular,sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
   margin: 30px;
   padding: 30px;
-line-height: 1.45;
-position: relative;
-color: #383838;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
 }
 
 blockquote:before {
-display: block;
-content: "\201C";
-font-size: 80px;
-position: absolute;
-left: -20px;
-top: -20px;
-color: #7a7a7a;
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
 }
 
 blockquote cite {
-color: #999999;
-font-size: 20px;
-display: block;
-margin-top: 5px;
-text-align: right;
+  color: #999999;
+  font-size: 20px;
+  display: block;
+  margin-top: 5px;
+  text-align: right;
 }
 
 blockquote cite:before {
-content: "\2014 \2009";
+  content: "\2014 \2009";
 }
 
-//
-// .stop-scrolling {
-//   height: 100%;
-//   overflow: hidden;
-// }
+.content {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  display:block;
+  position:relative;
+  z-index:120;
+}
+
+.section-heading {
+ font-size: 35px;
+}
 
 .marginbot-0{margin-bottom:0 !important;}
 .marginbot-10{margin-bottom:10px !important;}
@@ -220,8 +214,6 @@ content: "\2014 \2009";
 }
 
 
-
-
  // /* ==== Google font ==== */
  // @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
  // @font-face {
@@ -232,9 +224,6 @@ content: "\2014 \2009";
  //     font-url($icon-font-path + 'glyphicons-halflings-regular.ttf') format('truetype'),
  //     font-url($icon-font-path + 'glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
  // }
-
-
-
  //
  // .shared_links {
  //   font-size: 12px;
@@ -340,24 +329,6 @@ content: "\2014 \2009";
  // .light {
  //   font-weight: 400;
  // }
-
-
-
-
- //
- // /* ===========================
- // --- General sections
- // ============================ */
- //
- // .content {
- //   padding-top: 110px;
- //   padding-bottom: 110px;
- //   display:block;
- //   position:relative;
- //   z-index:120;
- // }
- //
-
 
 
 
