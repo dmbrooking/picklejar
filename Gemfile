@@ -39,6 +39,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'quiet_assets'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'rails-controller-testing'
   gem 'rspec-rails'
 end
 
