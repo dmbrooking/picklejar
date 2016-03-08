@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   # mount ActionCable.server => '/cable'
 
   resources :contact_forms
-  
+  resources :recipes
+
+  get 'myrecipes' => 'recipes#index', :as => 'user_recipes'
+
   root to: 'pages#index'
 end

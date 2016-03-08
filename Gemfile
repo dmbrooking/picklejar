@@ -31,6 +31,16 @@ gem 'coffee-rails', '~> 4.1.0'
 
 group :development, :test do
   gem 'byebug'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'growl'
+  gem 'guard'
+  gem 'guard-bundler'
+  gem 'guard-rspec'
+  gem 'quiet_assets'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'rails-controller-testing'
   gem 'rspec-rails'
 end
 

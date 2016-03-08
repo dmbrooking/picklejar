@@ -1,0 +1,22 @@
+<div class="content container">
+  <div class="section-heading">
+    My Recipes
+  </div>
+  <% if @recipes.any? %>
+    <% @recipes.each do |recipe| %>
+      <ul class="recipe-row">
+        <li class="recipe-image"></li>
+        <li class="recipe-link">
+          <%= link_to recipe.title, recipe.url, :target => "_blank" %>
+          <div class="recipe-subtitle">
+            <%= recipe.hostname.hostname %>
+          </div>
+        </li>
+      </ul>
+    <% end %>
+  <% else %>
+    <div class="no-recipes">
+      You have not saved any recipes yet. Begin saving using the browser extension or bookmarklet provided in your settings page.
+    </div>
+  <% end %>
+</div>
