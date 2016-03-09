@@ -1,0 +1,15 @@
+{
+  "name": "picklejar",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dmbrooking/picklejar",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.easing": "^1.3.1"
+  }
+}

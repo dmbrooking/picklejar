@@ -1,0 +1,109 @@
+.navbar-brand {
+  height: 40px;
+  padding: 5px 15px;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+.navbar-brand h1{
+  color: #7AC943;
+  font-size: 48px;
+  line-height: 50px;
+  font-family: HoneyScript-SemiBold, sans-serif;
+  text-transform: none;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.nav.navbar-nav {
+  background-color: rgba(255,255,255,.7);
+}
+
+.navbar-custom ul.nav li a, .field {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar-custom .nav li>a:hover,
+.navbar-custom .nav li>a:focus,
+.navbar-custom .nav li.active {
+  outline: 0;
+  background-color: $pickleJarGreen;
+}
+
+.navbar-custom .nav li ul li a:hover,
+.navbar-custom .nav li ul li a:focus  {
+  outline: 0;
+  color: $pickleJarGreen;
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 20px 0;
+  border-bottom: 0;
+  letter-spacing: 1px;
+  background: 0 0;
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.btn-signin {
+  width: 100%;
+  background: $pickleJarGreen;
+  border-color: $pickleJarGreen-dark;
+  color: $white;
+}
+
+.dropdown-menu  {
+  border: 1px solid $mercury;
+}
+
+.login  {
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+
+  .help-block{
+    font-size:12px
+  }
+
+  .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+  }
+}
+
+.top-nav-collapse {
+  padding: 0;
+  background-color: #000;
+}
+
+.navbar-custom.top-nav-collapse {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+
+.navbar-custom.top-nav-collapse .nav.navbar-nav {
+background-color: rgba(0,0,0,0);
+}
+
+.navbar-custom.top-nav-collapse ul.nav li a {
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+color: #fff;
+}
+
+.navbar-custom.top-nav-collapse ul.nav li.active a {
+  color: #000;
+}
+
+.navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
+color: #666;
+}

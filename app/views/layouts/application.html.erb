@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Picklejar</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Save recipes from anywhere on the internet to your Pickle Jar." name="description"/>
+    <meta content="Pickle Jar" name="author"/>
+    <meta content="Nrv5N156-6r677PtdgfI7RApXB9OD5n-5DUubHKOVOc" name="google-site-verification"/>
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    <%= analytics_init if GoogleAnalytics.valid_tracker? %>
+  </head>
+
+  <body>
+    <%= render 'layouts/messages' %>
+    <%= render 'layouts/navbar' %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </body>
+</html>
